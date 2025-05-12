@@ -47,7 +47,7 @@ A crypto trading bot leveraging price differentials on CoinDCX using spread stra
 
 ## 📫 Let's Connect
 
-- Twitter: [@Ekagra444](https://twitter.com/Ekagra444)
+- Twitter: [@Ekagra444](https://x.com/Ekagra0007?t=dH-uzZV2Hi4OGZegekWsLA&s=09)
 - LinkedIn: [linkedin.com/in/ekagra444](https://www.linkedin.com/in/ekagra444/)
 - Email: ekagraagrawal0@gmail.com
 
