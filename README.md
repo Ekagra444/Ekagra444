@@ -1,4 +1,4 @@
-# Ekagra Agrawal – Developer Portfolio Projects
+# Ekagra Agrawal –
 
 Welcome to my project showcase! I'm a 3rd-year engineering student at IIT Jammu, passionate about Full Stack Web Development and Blockchain. Here’s a curated list of my recent projects with live demos and source code links.
 
