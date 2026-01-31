@@ -1,55 +1,97 @@
-# Ekagra Agrawal –
+# Ekagra Agrawal
 
-Welcome to my project showcase! I'm a 3rd-year engineering student at IIT Jammu, passionate about Full Stack Web Development and Blockchain. Here’s a curated list of my recent projects with live demos and source code links.
+**Software Engineer | Full-Stack & Backend Systems**  
+B.Tech Civil Engineering, **IIT Jammu (2026)**  
+CGPA: **8.43**
 
----
+I am an aspiring software engineer with strong fundamentals in **backend systems, distributed architecture, and full-stack development**. My work focuses on building **scalable, production-ready systems** with clean abstractions, performance guarantees, and real-world failure handling.
 
-## 💡 Project 1: Extended Brain – Personal Portfolio & Idea Hub  
-A sleek developer portfolio and idea organizer designed to showcase projects and creativity.
-
-✅ Clean, mobile-responsive design with smooth animations and project highlights.  
-🔗 [Live Demo](https://react-extended-brain-u4n1.vercel.app/)
-
-🛠️ Tech: React.js, Tailwind CSS
+I have hands-on experience across **Node.js, TypeScript, PostgreSQL, Redis, real-time systems, and event-driven architectures**, complemented by strong problem-solving skills (550+ DSA problems solved).
 
 ---
 
-## 💡 Project 2: SoftSell – Marketing Website for a Software Resale Startup  
-A fictional software resale landing page built as part of an internship assignment for Credex.
+## 🔧 Technical Skills
 
-✅ Hero section, “How It Works” steps, feature tiles, testimonials, and validated contact form with dropdowns.  
-✅ Dark/light mode toggle, basic animations via Framer Motion, and AI widget placeholder.  
-🔗 [Live Demo]([https://soft-sell-landing-page-theta.vercel.app/](https://soft-sell-landing-page-theta.vercel.app/)) | [GitHub](https://github.com/Ekagra444/SoftSell-LandingPage)
-
-🛠️ Tech: Next.js, Tailwind CSS, Framer Motion
-
----
-
-## 💡 Project 3: Banking App – Trauma Management  
-A full-stack banking application enabling real-time money transfers and secure account management.
-
-✅ Real-time transaction updates, secure atomic operations, and robust backend with error handling.  
-🔗 [Live Demo](https://basic-payment-trauma-management.vercel.app/) | [GitHub](https://github.com/Ekagra444/basicPayment_traumaManagement)
-
-🛠️ Tech: React.js, Node.js, MySQL, Express
+- **Languages**: C++, JavaScript, TypeScript  
+- **Backend**: Node.js, Express.js, REST APIs, JWT Authentication  
+- **Frontend**: React, Next.js, Tailwind CSS  
+- **Databases**: PostgreSQL, MongoDB, MySQL, Prisma  
+- **Systems & Infra**: Redis, WebSockets, Pub/Sub, Rate Limiting  
+- **Tools**: Git, Zod, Winston, Vite, Lightweight Charts  
 
 ---
 
-## 💡 Project 4: Crypto Spread Trading Bot  
-A crypto trading bot leveraging price differentials on CoinDCX using spread strategies.
+## 💼 Experience
 
-✅ Real-time order book monitoring, modular architecture, and advanced risk management.  
-🔗 [GitHub](https://github.com/Ekagra444/spread-trading-bot)
+### **Software Development Engineer Intern — VouchIt**  
+*Jun 2025 – Aug 2025 (Remote)*  
+- Built robust PDF data extraction pipelines using `pdfplumber`
+- Designed parsing logic for **8 different banks**, handling heterogeneous layouts
+- Implemented fault-tolerant extraction rules for inconsistent data formats
 
-🛠️ Tech: TypeScript, Node.js, Axios, CoinDCX API
+### **Frontend Developer Intern — RecurX**  
+*May 2025 – Jun 2025 (Remote)*  
+- Improved UI performance and usability using **Next.js**
+- Reduced bounce rate by **~15%** via responsive design improvements
+- Built reusable, scalable components using **Tailwind CSS & shadcn/ui**
 
 ---
 
-## 📫 Let's Connect
+## 🚀 Featured Projects
 
-- Twitter: [@Ekagra444](https://x.com/Ekagra0007?t=dH-uzZV2Hi4OGZegekWsLA&s=09)
-- Email: ekagra444@gmail.com
+### **Real-Time Trading Platform (Mock Exchange)**
+**Production-grade microservices trading system**
+
+- Built a mock crypto exchange supporting **market & limit orders** using live Binance BTC/USDT order book data
+- Designed an **event-driven microservices architecture**:
+  - API Gateway
+  - Execution Service (order matching & balance reservation)
+  - Event Service (WebSockets, Binance streams)
+- Implemented:
+  - **O(log n)** order book using Min/Max heaps
+  - Persistent candlestick charts (1-month retention)
+  - JWT authentication with HttpOnly cookies
+  - Redis Pub/Sub for inter-service communication
+- **Tech**: Next.js, TypeScript, Node.js, PostgreSQL (Neon), Redis, Binance WebSocket API
 
 ---
 
-> I'm currently open to internships in full-stack development, Web3/blockchain, and backend engineering. Let's build something great together!
+### **Job Platform Review Backend**
+**Production-ready backend system**
+
+A scalable **Node.js + TypeScript backend** for a job-review platform, designed with real-world production concerns.
+
+**Key Highlights**
+- Secure authentication using **JWT + HttpOnly cookies**
+- Clean layered architecture  
+  *(Routes → Controllers → Services → Repositories → Database)*
+- PostgreSQL with indexing, connection pooling, and pagination
+- Security hardening with **Helmet, CORS, rate limiting**
+- Input validation using **Zod**
+- Centralized error handling and structured logging with **Winston**
+
+**Tech Stack**  
+Node.js · Express · TypeScript · PostgreSQL · Socket.IO · Redis · JWT
+
+---
+
+### **Second Brain — Personal Knowledge Management System**
+- Built a full-stack knowledge capture & retrieval platform
+- Efficient state management using **Zustand + React Query**
+- Secure backend with JWT-based authentication
+- **Tech**: React, TypeScript, Tailwind CSS, Node.js, MongoDB
+
+---
+
+## 🏆 Achievements
+- **550+ problems solved** across coding platforms
+- **Codeforces Specialist** (Max Rating: 1440)
+
+---
+
+## 📫 Contact
+- **Email**: ekagra444@gmail.com  
+- **GitHub**: https://github.com/Ekagra444  
+---
+
+> Open to **SDE, Backend, and Platform Engineering** internship and full-time roles.
