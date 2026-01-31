@@ -1,6 +1,6 @@
 # Ekagra Agrawal
 
-**Software Engineer | Full-Stack & Backend Systems**  
+**Full-Stack & Backend Systems**  
 B.Tech Civil Engineering, **IIT Jammu (2026)**  
 CGPA: **8.43**
 
