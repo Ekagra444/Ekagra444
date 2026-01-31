@@ -20,6 +20,7 @@ I have hands-on experience across **Node.js, TypeScript, PostgreSQL, Redis, real
 - **Tools**: Git, Zod, Winston, Vite, Lightweight Charts  
 
 ---
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Ekagra444&layout=compact&langs_count=6&theme=tokyonight)
 
 ## 💼 Experience
 
