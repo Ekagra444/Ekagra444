@@ -1,7 +1,7 @@
 # Ekagra Agrawal
 
 **Full-Stack & Backend Systems**  
-B.Tech Civil Engineering, **IIT Jammu (2026)**  
+B.Tech, **IIT Jammu (2026)**  
 CGPA: **8.43**
 
 I am an aspiring software engineer with strong fundamentals in **backend systems, distributed architecture, and full-stack development**. My work focuses on building **scalable, production-ready systems** with clean abstractions, performance guarantees, and real-world failure handling.
