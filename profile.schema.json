@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["profile", "contact", "experience", "projects", "skills", "achievements"],
+  "properties": {
+    "profile": { "type": "object", "required": ["name", "username", "headline", "subheadline"] },
+    "contact": { "type": "object", "required": ["email", "github"] },
+    "experience": { "type": "array", "items": { "type": "object", "required": ["company", "role", "period", "highlights"] } },
+    "projects": { "type": "array", "items": { "type": "object", "required": ["name", "label", "summary", "tech", "highlights"] } },
+    "skills": { "type": "object" },
+    "achievements": { "type": "array", "items": { "type": "string" } }
+  }
+}

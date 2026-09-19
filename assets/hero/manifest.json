@@ -1,0 +1,22 @@
+{
+  "assets": [
+    {
+      "file": "hero-dark.svg",
+      "width": 980,
+      "height": 520,
+      "columns": 63,
+      "rows": 58,
+      "mode": "dark",
+      "generator": "ekagra-github-portfolio/scripts/generate_portrait.py"
+    },
+    {
+      "file": "hero-light.svg",
+      "width": 980,
+      "height": 520,
+      "columns": 63,
+      "rows": 58,
+      "mode": "light",
+      "generator": "ekagra-github-portfolio/scripts/generate_portrait.py"
+    }
+  ]
+}

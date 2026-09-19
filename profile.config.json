@@ -1,0 +1,92 @@
+{
+  "profile": {
+    "name": "Ekagra Agrawal",
+    "username": "Ekagra444",
+    "headline": "Software Engineer",
+    "subheadline": "Backend Systems · Distributed Systems · SRE",
+    "location": "India",
+    "education": "B.Tech— IIT Jammu (2026)",
+    "cgpa": "8.37"
+  },
+  "contact": {
+    "email": "ekagra444@gmail.com",
+    "github": "https://github.com/Ekagra444"
+  },
+  "experience": [
+    {
+      "company": "GSPANN Technologies, Inc.",
+      "role": "Software Engineer Trainee — SRE Focus",
+      "period": "Jun 2026 – Present",
+      "mode": "On-site",
+      "highlights": [
+        "Enterprise SRE and IT operations training",
+        "ITIL incident, service-request, and infrastructure-change lifecycle",
+        "Application and infrastructure monitoring concepts",
+        "L1/L2/L3 escalation, SLA, FCR, and MTTR frameworks"
+      ]
+    },
+    {
+      "company": "VouchIt",
+      "role": "Software Development Engineer Intern",
+      "period": "Jun 2025 – Aug 2025",
+      "mode": "Remote",
+      "highlights": [
+        "Built PDF extraction logic using pdfplumber",
+        "Implemented parsing rules for 8 bank statement formats",
+        "Handled heterogeneous layouts with robust extraction rules"
+      ]
+    },
+    {
+      "company": "RecurX",
+      "role": "Frontend Developer Intern",
+      "period": "May 2025 – Jun 2025",
+      "mode": "Remote",
+      "highlights": [
+        "Improved website UI with Next.js",
+        "Reduced bounce rate by 15%",
+        "Built responsive reusable components with Tailwind CSS and shadcn/ui"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Real-time Trading Platform",
+      "label": "Mock Exchange with Binance Integration",
+      "repo": "https://github.com/Ekagra444/TradingPlatform",
+      "summary": "Event-driven microservices trading platform with live market data and order execution.",
+      "tech": ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Redis", "Binance WebSocket API"],
+      "highlights": [
+        "Market and limit order matching using a min/max heap order book",
+        "API Gateway, Execution Service, and Event Service architecture",
+        "Redis Pub/Sub for service communication and WebSocket market streams",
+        "JWT authentication with HttpOnly cookies and balance reservation",
+        "Persistent candlestick charts and command/event tables"
+      ]
+    },
+    {
+      "name": "Second Brain",
+      "label": "Personal Knowledge Management System",
+      "repo": "https://github.com/Ekagra444/react-extended_brain",
+      "summary": "Full-stack platform for structured knowledge capture, organization, and retrieval.",
+      "tech": ["React", "TypeScript", "Tailwind CSS", "Zustand", "React Query", "Node.js", "Express", "MongoDB"],
+      "highlights": [
+        "Responsive knowledge-capture and search workflow",
+        "JWT-secured Node.js + Express backend",
+        "Efficient client state and server-cache handling with Zustand and React Query"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": ["C", "C++", "Python", "JavaScript", "TypeScript" ],
+    "backend": ["Node.js", "Express.js", "REST APIs", "JWT"],
+    "frontend": ["React", "Next.js", "Tailwind CSS", "shadcn/ui"],
+    "data": ["PostgreSQL", "MongoDB", "MySQL", "Prisma"],
+    "systems": ["Redis", "WebSockets", "Pub/Sub", "Rate Limiting"],
+    "tooling": ["Git", "Zod", "Winston", "Vite", "Lightweight Charts"]
+  },
+  "achievements": [
+    "900+ coding problems solved",
+    "Codeforces Specialist — max rating 1440",
+    "CodeChef Global Rank 193 — Starters 207 (Oct 2025)"
+  ]
+}

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="980"
+  height="520"
+  viewBox="0 0 980 520"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">
+    Ekagra Agrawal — animated ASCII portrait
+  </title>
+
+  <desc id="desc">
+    A monochrome terminal-style ASCII portrait with
+    a rolling scan reveal.
+  </desc>
+
+  <defs>
+
+    <style>
+      .frame {
+        fill: #F6F8FA;
+        stroke: #D0D7DE;
+        stroke-width: 1;
+      }
+
+      .ascii {
+        fill: #15202B;
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          "Liberation Mono",
+          monospace;
+        font-size: 7.65px;
+        font-weight: 500;
+        letter-spacing: 0.05px;
+        white-space: pre;
+      }
+
+      .muted {
+        fill: #57606A;
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          monospace;
+        font-size: 12px;
+      }
+
+      .accent {
+        fill: #0969DA;
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          monospace;
+        font-size: 12px;
+        font-weight: 700;
+      }
+    </style>
+
+
+    <!-- =========================================================
+         SCANNER GRADIENT
+         ========================================================= -->
+
+    <linearGradient
+      id="scan"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="0"
+    >
+      <stop
+        offset="0"
+        stop-color="#0969DA"
+        stop-opacity="0"
+      />
+
+      <stop
+        offset="0.40"
+        stop-color="#0969DA"
+        stop-opacity="0.12"
+      />
+
+      <stop
+        offset="0.50"
+        stop-color="#0969DA"
+        stop-opacity="0.75"
+      />
+
+      <stop
+        offset="0.60"
+        stop-color="#0969DA"
+        stop-opacity="0.12"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#0969DA"
+        stop-opacity="0"
+      />
+    </linearGradient>
+
+
+    <!-- =========================================================
+         PORTRAIT REVEAL / ERASE MASK
+
+         Timeline:
+
+         0%   -> width 0
+         42%  -> width 510   (fully revealed)
+         50%  -> width 510   (pause)
+         92%  -> width 0     (fully erased)
+         100% -> width 0
+         ========================================================= -->
+
+    <mask id="roll-mask">
+
+      <!-- Entire portrait starts hidden -->
+      <rect
+        x="24"
+        y="24"
+        width="510"
+        height="455"
+        fill="black"
+      />
+
+      <!-- White region = visible portrait -->
+      <rect
+        x="24"
+        y="24"
+        width="0"
+        height="455"
+        fill="white"
+      >
+        <animate
+          attributeName="width"
+          values="0;510;510;0;0"
+          keyTimes="0;0.42;0.50;0.92;1"
+          dur="15s"
+          repeatCount="indefinite"
+        />
+      </rect>
+
+    </mask>
+
+
+    <!-- Clips the actual portrait -->
+    <clipPath id="portrait-clip">
+      <rect
+        x="24"
+        y="24"
+        width="510"
+        height="455"
+        rx="10"
+      />
+    </clipPath>
+
+
+    <!-- Scanner can cover the ENTIRE card -->
+    <clipPath id="scanner-clip">
+      <rect
+        x="1"
+        y="1"
+        width="978"
+        height="518"
+        rx="14"
+      />
+    </clipPath>
+
+  </defs>
+
+
+  <!-- =========================================================
+       OUTER CARD
+       ========================================================= -->
+
+  <rect
+    class="frame"
+    x="1"
+    y="1"
+    width="978"
+    height="518"
+    rx="14"
+  />
+
+
+  <!-- =========================================================
+       TERMINAL HEADER
+       ========================================================= -->
+
+  <text
+    x="24"
+    y="22"
+    class="muted"
+  >
+    ekagra@github:~$ ./profile --portrait
+  </text>
+
+  <text
+    x="836"
+    y="22"
+    class="muted"
+  >
+    PROFILE
+  </text>
+
+  <circle
+    cx="920"
+    cy="18"
+    r="4"
+    fill="#0969DA"
+  />
+
+
+  <!-- =========================================================
+       PORTRAIT
+       ========================================================= -->
+
+  <g clip-path="url(#portrait-clip)">
+
+    <rect
+      x="24"
+      y="24"
+      width="510"
+      height="455"
+      fill="#F6F8FA"
+    />
+
+    <!--
+      The ASCII art itself is controlled by roll-mask.
+
+      LEFT -> RIGHT:
+          mask grows
+          portrait gets painted/revealed
+
+      RIGHT -> LEFT:
+          mask shrinks
+          portrait gets unpainted/erased
+    -->
+    <g mask="url(#roll-mask)">
+      <text x="40" y="56.0" class="ascii"></text><text x="40" y="63.9" class="ascii">                         :;iiri;</text><text x="40" y="71.8" class="ascii">                       iX52MM5h2s:</text><text x="40" y="79.7" class="ascii">                     :2hGG3HhGHGM2Ar:</text><text x="40" y="87.6" class="ascii">                   ,.s#9#SGHS#SGSHhhAr,..</text><text x="40" y="95.5" class="ascii">                   .,39B#S##99#GGGh#ShX,.</text><text x="40" y="103.4" class="ascii">                   .:G9BB#BBB9SHGGB&amp;&amp;9Gr,</text><text x="40" y="111.3" class="ascii">                   .29BBGMG##GGH3hMG9B95:</text><text x="40" y="119.2" class="ascii">                   :SB&amp;Sh52AXXXsr:;s2M#Hs</text><text x="40" y="127.1" class="ascii">                   hB&amp;G352Xrrrii:. :rs5h3</text><text x="40" y="135.0" class="ascii">                   MBS5222Xrii;:,,,,,;sHG</text><text x="40" y="142.9" class="ascii">                   5#M222Asi;;::,.,,:;s3#</text><text x="40" y="150.8" class="ascii">                   5#3AAXsri;;;:,...:;s5SG</text><text x="40" y="158.7" class="ascii">                   ASAX25552Xrrri;,.,:r5GH</text><text x="40" y="166.6" class="ascii">                   XHs39BBB#H33GSGM2s:;AG2</text><text x="40" y="174.5" class="ascii">                   rM5HHHGHS#SHSSSGh52XsG;</text><text x="40" y="182.4" class="ascii">                   XGs5MHHGMGGM2hSS5As;Gh</text><text x="40" y="190.3" class="ascii">                   5MXMhHGGGG22XhSBHM5;53</text><text x="40" y="198.2" class="ascii">                   ;3sA2hMM5Gri3XhM5Xi:A5,</text><text x="40" y="206.1" class="ascii">                   r3isA25AA5: 2isAr: ;iiX</text><text x="40" y="214.0" class="ascii">                   rAsXAAXXh;, ,Xiii::r,rs</text><text x="40" y="221.9" class="ascii">                    AX22A25i:,. :siiir::Ai</text><text x="40" y="229.8" class="ascii">                    5XXsrX25Ar;sri,,:::is</text><text x="40" y="237.7" class="ascii">                    32XrrsXH9SH3i :,::;X</text><text x="40" y="245.6" class="ascii">                    2h2ss2GB9S#9hr:::;s2</text><text x="40" y="253.5" class="ascii">                    rHh5hBB#Hh3HSShriXXX</text><text x="40" y="261.4" class="ascii">                     3HH#9G5Asi;sS93AAA;</text><text x="40" y="269.3" class="ascii">                     sMhShsAG#G3ish32A2</text><text x="40" y="277.2" class="ascii">                      hhH3rs2M3s;:s32hi</text><text x="40" y="285.1" class="ascii">                      :GH5r;sAi:,,shH5.</text><text x="40" y="293.0" class="ascii">                       2#H22352rir3#Mii</text><text x="40" y="300.9" class="ascii">                     ,sh59SGS#GHMH#G;s25r,</text><text x="40" y="308.8" class="ascii">                  ;i5SG#X59BBBBBBBHi;3X5#5s:</text><text x="40" y="316.7" class="ascii">                 X3HS#H&amp;3X2H9B&amp;BS5i:35X2#3XAs:</text><text x="40" y="324.6" class="ascii">               AGGGG9#G&amp;S5AAhHG3s::2M2XASMAA2XXi:</text><text x="40" y="332.5" class="ascii">             AHS#SSS99G9BM5AA2X;:;5S522A53AA22522X;</text><text x="40" y="340.4" class="ascii">           XM####SS#99SS9#h222sirh#H352252XAX225552s:</text><text x="40" y="348.3" class="ascii">         XMS###SSSS#BB#9GSG2A225H##5hhA55A22XXXA2335Xr:</text><text x="40" y="356.2" class="ascii">        5SSSSSGGGGS#9B#99HS5:r3HGM3h5AA32522AAXAXX2222Ai</text><text x="40" y="364.1" class="ascii">      rMS####SGGHGS##999B9Hh:r5hA2h2XX222AAX2X2XAX5AXXAAi</text><text x="40" y="372.0" class="ascii">     sMGGGGS##SGGHGG#99#9BS3rrXsX3XsXXA2A2AX5A2X2222AssXX;</text><text x="40" y="379.9" class="ascii">    rHGSSHMMGGSGGGGGG#9S999G5XXiArirssAAXAAs22XAA255XAAXXr</text><text x="40" y="387.8" class="ascii">    AGGS#SHHMMHHhHHHGS9S##9#H35X;;;iisX22XXX55XX5252A525XX:</text><text x="40" y="395.7" class="ascii">    hGSG#9#HMhMHhMHMMGBHSSSGS#2hMr;ir;A53AXX35AXAA5223532ss</text><text x="40" y="403.6" class="ascii">   rS#GHG#9#GMhMhMMMM#BhHHH9&amp;5X3&amp;&amp;HAii2A55XX52AXA22A52h2Ar2</text><text x="40" y="411.5" class="ascii">   29SGMHS99#GMhhhhMS99MG9&amp;&amp;&amp;hM#9&amp;&amp;9S55X52XX552XA2A55A3HAs3:</text><text x="40" y="419.4" class="ascii">   M9SSMMHG#9#HM33MGGGGSS##G#Sh3G#SSH2h252AA522AA22322XHhX5s</text><text x="40" y="427.3" class="ascii">  i99##GMMHSSSSHMhhMhMMHMHHHSMA3hhHH3A5552A2522AX555XAX5M332,</text><text x="40" y="435.2" class="ascii">  A99###GMMGGHHGMHhhhhhhhM3MGhrs23HhXA533A255552535AXXX2M2h5i</text><text x="40" y="443.1" class="ascii">  h99#SSGHMHGGHGhMMhhhhhhh33H3rr222XrA253255325223AXXXXXA23MX</text><text x="40" y="451.0" class="ascii">  G#9###SSGHGHGGMMMhhhhhh5hMS3ss2ssXs25535555535AAAXrirrsA5M5:</text><text x="40" y="458.9" class="ascii">  ##9#9B9##SSHHHHMMhhMhh5225#hs2hh5XX25335353335AXXXri;;iiAM5r</text><text x="40" y="466.8" class="ascii"> r999#S##9##SSGGGHMMhMM35525#h;;HGh22553h3533355XXXsriiissXhA2</text><text x="40" y="474.7" class="ascii"> s9#9##GG###SSGHGGHMMhh55555GHsiMHh333h3h35333352AXXAMh3h323Ah,</text><text x="40" y="482.6" class="ascii"> A9####GHGSGGGGHHGHMMh555hhhGG2XHGM333hhh353335355hh399#SS#5A3i</text><text x="40" y="490.5" class="ascii"> 5SSSS9#HHHHMMHMHGHHMh25533MHG2AHh333hhhMh3hh35hMHGGh9B9#B93222</text><text x="40" y="498.4" class="ascii"> hSS#S99SGGHMMHGS#GHM3533h3HMG2233hMMHMMMhhMh3hhh3hHh9B9&amp;&amp;#M2AM</text><text x="40" y="506.3" class="ascii"> M#B##B9#9BB&amp;SG##9#HM33h3M3MSS5h3H#SSHHGHMhHh3hhh53Hh#B&amp;&amp;&amp;SH3XH</text>
+    </g>
+
+  </g>
+
+
+  <!-- =========================================================
+       GLOBAL SCANNER
+
+       IMPORTANT:
+
+       This scanner is NOT clipped to the portrait.
+
+       It travels across the entire 980px card, including
+       the profile information on the right.
+       ========================================================= -->
+
+  <g clip-path="url(#scanner-clip)">
+
+    <rect
+      x="-360"
+      y="1"
+      width="360"
+      height="518"
+      fill="url(#scan)"
+      opacity="0"
+    >
+
+      <!--
+        Same timeline as the mask:
+
+        0%  -> left
+        42% -> right
+        50% -> pause at right
+        92% -> left
+        100% -> reset
+      -->
+      <animate
+        attributeName="x"
+        values="-360;980;980;-360;-360"
+        keyTimes="0;0.42;0.50;0.92;1"
+        dur="15s"
+        repeatCount="indefinite"
+      />
+
+      <!-- Scanner fades in/out at the edges -->
+      <animate
+        attributeName="opacity"
+        values="0;0.35;0.35;0;0"
+        keyTimes="0;0.08;0.84;0.92;1"
+        dur="15s"
+        repeatCount="indefinite"
+      />
+
+    </rect>
+
+  </g>
+
+
+  <!-- =========================================================
+       RIGHT SIDE PROFILE
+       ========================================================= -->
+
+  <line
+    x1="566"
+    y1="50"
+    x2="944"
+    y2="50"
+    stroke="#D0D7DE"
+  />
+
+  <text
+    x="566"
+    y="83"
+    class="accent"
+  >
+    EKAGRA AGRAWAL
+  </text>
+
+  <text
+    x="566"
+    y="108"
+    class="muted"
+  >
+    SOFTWARE ENGINEER
+  </text>
+
+  <text
+    x="566"
+    y="142"
+    class="muted"
+  >
+    current
+  </text>
+
+  <text
+    x="566"
+    y="163"
+    class="ascii"
+    style="font-size:12px;"
+  >
+    GSPANN Technologies
+  </text>
+
+  <text
+    x="566"
+    y="182"
+    class="ascii"
+    style="font-size:12px;"
+  >
+    Software Engineer Trainee
+  </text>
+
+  <text
+    x="566"
+    y="201"
+    class="ascii"
+    style="font-size:12px;"
+  >
+    SRE focus
+  </text>
+
+
+  <line
+    x1="566"
+    y1="228"
+    x2="944"
+    y2="228"
+    stroke="#D0D7DE"
+  />
+
+  <text
+    x="566"
+    y="258"
+    class="muted"
+  >
+    signal
+  </text>
+
+  <text
+    x="566"
+    y="281"
+    class="ascii"
+    style="font-size:12px;"
+  >
+    900+ problems
+  </text>
+
+  <text
+    x="566"
+    y="300"
+    class="ascii"
+    style="font-size:12px;"
+  >
+    Codeforces Specialist · 1440
+  </text>
+
+  <text
+    x="566"
+    y="319"
+    class="ascii"
+    style="font-size:12px;"
+  >
+    CodeChef · global rank 193
+  </text>
+
+
+  <line
+    x1="566"
+    y1="346"
+    x2="944"
+    y2="346"
+    stroke="#D0D7DE"
+  />
+
+  <text
+    x="566"
+    y="376"
+    class="muted"
+  >
+    stack
+  </text>
+
+  <text
+    x="566"
+    y="397"
+    class="ascii"
+    style="font-size:11px;"
+  >
+    TypeScript · Node.js · PostgreSQL
+  </text>
+
+  <text
+    x="566"
+    y="416"
+    class="ascii"
+    style="font-size:11px;"
+  >
+    Redis · React · Next.js · Python
+  </text>
+
+  <text
+    x="566"
+    y="452"
+    class="muted"
+  >
+    IIT Jammu · B.Tech 2026 · CGPA 8.37
+  </text>
+
+  <text
+    x="566"
+    y="474"
+    class="muted"
+  >
+    github.com/Ekagra444
+  </text>
+
+</svg>
