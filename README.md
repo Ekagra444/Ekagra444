@@ -94,6 +94,16 @@ Full-stack platform for structured knowledge capture, organization, and retrieva
 | Systems | Redis · WebSockets · Pub/Sub · Rate Limiting |
 | Tooling | Git · Zod · Winston · Vite · Lightweight Charts |
 
+## `~/languages`
+
+<div align="center">
+  <img
+    src="https://github-stats-extended.vercel.app/api/top-langs?username=Ekagra444&layout=donut&langs_count=4&theme=radical"
+    alt="Top Languages"
+    width="400"
+  />
+</div>
+
 ## `~/problem-solving`
 
 - 900+ coding problems solved
